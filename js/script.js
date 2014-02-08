@@ -1,8 +1,3 @@
-document.addEventListener("deviceready", function(){
-    $('body').css('background-color', 'tomato');
- },true);
-
-
 // The watch id references the current `watchHeading`
 var watchID = null;
 
@@ -13,6 +8,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 // Cordova is ready
 //
 function onDeviceReady() {
+    $('body').css('background-color', 'tomato');
     navigator.notification.alert("PhoneGap is ready!");
     startWatch();
 }
