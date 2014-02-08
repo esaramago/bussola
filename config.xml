@@ -8,6 +8,7 @@
     
     <preference name="phonegap-version" value="2.9.0" />
 
+    <name>Brôssula</name>
     <description>Bússola que funciona!</description>
     <author href="https://esaramago.com" email="reg@esaramago.com">Emanuel Saramago</author>
 
@@ -20,5 +21,4 @@
         <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener" />
     </feature>
 
-    <name>Bússola</name>
 </widget>
