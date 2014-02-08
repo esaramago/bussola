@@ -27,9 +27,12 @@ function startWatch() {
 function onSuccess(heading) {
 
 	$('.bussola').css({
-	 	'-webkit-transform': 'rotate(' + heading.magneticHeading + 'deg)',
-		'transform': 'rotate(' + heading.magneticHeading + 'deg)'
+	 	'-webkit-transform': 'rotate(-' + heading.magneticHeading + 'deg)',
+		'transform': 'rotate(-' + heading.magneticHeading + 'deg)'
 	});
+
+    var element = document.getElementById('heading');
+        element.innerHTML = heading.magneticHeading;
 }
 
 // onError: Failed to get the heading
