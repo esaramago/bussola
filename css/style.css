@@ -1,6 +1,7 @@
 @font-face {
 	font-family: 'Engagement';
-	src: local('Engagement'), local('Engagement-Regular'), url(http://themes.googleusercontent.com/static/fonts/engagement/v3/IYnYh0uOiuydvYrbHKIjwRsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+	src: url('../font/engagement.ttf') format('truetype');
+	src: url('../font/engagement.woff') format('opentype');
 }
 
 ul {
@@ -34,8 +35,8 @@ li {
 	border-radius: 100%;
 	background-color: #DDD;
 	box-shadow: 0 0 30px 5px #DDD, inset 0 0 9px #555;
-	-webkit-transition: all .5s linear;
-	transition: all .5s linear;
+	-webkit-transition: all .5s;
+	transition: all .5s;
 }
 .linha {
 	width: 153px;
