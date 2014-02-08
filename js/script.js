@@ -17,7 +17,7 @@ function onDeviceReady() {
 function startWatch() {
 
     // Update compass every 3 seconds
-    var options = { frequency: 500 };
+    var options = { frequency: 700 };
 
     watchID = navigator.compass.watchHeading(onSuccess, onError, options);
 }
@@ -31,8 +31,6 @@ function onSuccess(heading) {
 		'transform': 'rotate(-' + heading.magneticHeading + 'deg)'
 	});
 
-    var element = document.getElementById('heading');
-        element.innerHTML = heading.magneticHeading;
 }
 
 // onError: Failed to get the heading

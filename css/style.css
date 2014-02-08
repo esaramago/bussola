@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'Engagement';
+	src: local('Engagement'), local('Engagement-Regular'), url(http://themes.googleusercontent.com/static/fonts/engagement/v3/IYnYh0uOiuydvYrbHKIjwRsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+
 ul {
 	padding-left: 0;
 }
@@ -13,16 +18,24 @@ li {
 	margin: auto;
 }
 
+.heading {
+	font-family: 'Engagement';
+	font-size: 6em;
+	font-weight: normal;
+	color: #888;
+	text-align: center;
+}
+
 .bussola {
-	cursor: pointer;
+	bottom: -10%;
 	width: 200px;
 	height: 200px;
 	border: 22px solid #E8AF46;
 	border-radius: 100%;
 	background-color: #DDD;
 	box-shadow: 0 0 30px 5px #DDD, inset 0 0 9px #555;
-	-webkit-transition: all 1s linear;
-	transition: all 1s linear;
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
 }
 .linha {
 	width: 153px;
@@ -219,4 +232,15 @@ li {
 #pont_dir2 {
 	top: 24px; /* posição horizontal 2 */
 	border-top: 85px solid #BBB;
+}
+
+
+footer {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	font-family: arial, sans-serif;
+	font-size: 11px;
+	color: #333;
+	text-align: center;
 }
