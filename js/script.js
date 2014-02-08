@@ -8,10 +8,9 @@ document.addEventListener("deviceready", onDeviceReady, false);
 // Cordova is ready
 //
 function onDeviceReady() {
-    startWatch();
-$('body').css('background-color', 'tomato');
-
+    $('body').css('background-color', 'tomato');
     navigator.notification.alert("PhoneGap is ready!");
+    startWatch();
 }
 
 // Start watching the compass
