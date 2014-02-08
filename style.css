@@ -1,0 +1,238 @@
+ul {
+	padding-left: 0;
+}
+li {
+	list-style: none;
+}
+.centrado {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+.bussola {
+	cursor: pointer;
+	width: 200px;
+	height: 200px;
+	border: 22px solid #E8AF46;
+	border-radius: 100%;
+	background-color: #DDD;
+	box-shadow: 0 0 30px 5px #DDD, inset 0 0 9px #555;
+}
+.linha {
+	width: 153px;
+	height: 153px;
+	border: 1px solid #BBB;
+	border-radius: 100%;
+}
+
+.pontos_cardeais {
+	width: 20px;
+	height: 20px;
+}
+.pt_car,
+.pt_col {
+	position: absolute;
+}
+#pt_carN,
+#pt_carS {
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+}
+#pt_carN {
+	bottom: 15px;
+	border-bottom: 70px solid #666;
+}
+#pt_carS {
+	top: 15px;
+	border-top: 70px solid #666;
+}
+#pt_carE,
+#pt_carO {
+	top: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+#pt_carE {
+	left: 15px;
+	border-left: 70px solid #666;
+}
+#pt_carO {
+	right: 15px;
+	border-right: 70px solid #666;
+}
+
+.pts_cols {
+	position: relative;
+	bottom: 12px;
+	left: 6px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+#pt_colNE,
+#pt_colSO {
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+}
+#pt_colNE {
+	bottom: 0;
+	border-bottom: 40px solid #888;
+}
+#pt_colSO {
+	top: 15px;
+	border-top: 40px solid #888;
+}
+#pt_colSE,
+#pt_colNO {
+	top: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+#pt_colSE {
+	left: 15px;
+	border-left: 40px solid #888;
+}
+#pt_colNO {
+	right: 15px;
+	border-right: 40px solid #888;
+}
+
+#pt_carN:after,
+#pt_carS:after,
+#pt_carE:after,
+#pt_carO:after,
+#pt_colNE:after,
+#pt_colSE:after,
+#pt_colSO:after,
+#pt_colNO:after {
+	position: absolute;
+	font-family: serif;
+	color: #888;
+	font-size: 18px;
+}
+
+#pt_carN:after {
+	content: "N";
+	top: -22px;
+	left: -7px;
+}
+#pt_carS:after {
+	content: "S";
+	top: 2px;
+	left: -5px;
+}
+#pt_carE:after {
+	content: "E";
+	top: -10px;
+	left: 7px;
+}
+#pt_carO:after {
+	content: "O";
+	top: -10px;
+	left: -19px;
+}
+#pt_colNE:after,
+#pt_colSE:after,
+#pt_colSO:after,
+#pt_colNO:after {
+	font-size: 13px;
+}
+#pt_colSE:after,
+#pt_colNO:after {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+#pt_colNE:after {
+	content: "NE";
+	top: -17px;
+	left: -7px;
+}
+#pt_colSE:after {
+	content: "SE";
+	top: -7px;
+}
+#pt_colSO:after {
+	content: "SO";
+	left: -10px;
+}
+#pt_colNO:after {
+	content: "NO";
+	top: -9px;
+	left: -16px;
+}
+
+
+.ponteiro {
+	width: 36px;
+	height: 36px;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+.ponteiro[data-direcao*="norte"] {
+	-webkit-transform: rotate(0);
+	transform: rotate(0);
+}
+.ponteiro[data-direcao*="este"] {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.ponteiro[data-direcao*="sul"] {
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.ponteiro[data-direcao*="oeste"] {
+	-webkit-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+
+
+
+.pont_centro {
+	width: 36px;
+	height: 36px;
+	border-radius: 36% 100%;
+	background-color: #BBB;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.pont_parafuso {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 18px;
+	height: 18px;
+	border: 1px solid #DDD;
+	border-radius: 100%;
+	margin: auto;
+	background-color: #E8AF46;
+	box-shadow: 0 0 3px #888, inset 0 0 5px #888;
+}
+.pont_dir {
+	position: absolute;
+	margin-left: 4px; /* posição vertical */
+	border-left: 14px solid transparent;
+	border-right: 14px solid transparent;
+}
+#pont_dir1 {
+	bottom: 24px; /* posição horizontal 1 */
+	border-bottom: 85px solid #C45637;
+}
+#pont_dir2 {
+	top: 24px; /* posição horizontal 2 */
+	border-top: 85px solid #BBB;
+}
