@@ -8,8 +8,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 // Cordova is ready
 //
 function onDeviceReady() {
-    $('body').css('background-color', 'tomato');
-    navigator.notification.alert("PhoneGap is ready!");
+    //navigator.notification.alert("PhoneGap is ready!");
     startWatch();
 }
 
@@ -27,7 +26,7 @@ function startWatch() {
 //
 function onSuccess(heading) {
 
-	$('.ponteiro').css({
+	$('.bussola').css({
 	 	'-webkit-transform': 'rotate(' + heading.magneticHeading + 'deg)',
 		'transform': 'rotate(' + heading.magneticHeading + 'deg)'
 	});

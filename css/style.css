@@ -21,6 +21,8 @@ li {
 	border-radius: 100%;
 	background-color: #DDD;
 	box-shadow: 0 0 30px 5px #DDD, inset 0 0 9px #555;
+	-webkit-transition: all 1s;
+	transition: all 1s;
 }
 .linha {
 	width: 153px;
@@ -175,24 +177,6 @@ li {
 .ponteiro {
 	width: 36px;
 	height: 36px;
-	-webkit-transition: all 1s;
-	transition: all 1s;
-}
-.ponteiro[data-direcao*="norte"] {
-	-webkit-transform: rotate(0);
-	transform: rotate(0);
-}
-.ponteiro[data-direcao*="este"] {
-	-webkit-transform: rotate(90deg);
-	transform: rotate(90deg);
-}
-.ponteiro[data-direcao*="sul"] {
-	-webkit-transform: rotate(180deg);
-	transform: rotate(180deg);
-}
-.ponteiro[data-direcao*="oeste"] {
-	-webkit-transform: rotate(270deg);
-	transform: rotate(270deg);
 }
 
 
