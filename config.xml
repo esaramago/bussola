@@ -9,14 +9,13 @@
     <name>Bússola</name>
 
     <description>
-    An example for phonegap build docs. 
+    Bússola que funciona!
     </description>
 
 	<author href="https://esaramago.com" email="reg@esaramago.com">
 	Emanuel Saramago
 	</author>
 
-    <preference name="phonegap-version" value="3.1.0" />
 	<preference name="orientation" value="portrait" />
 
 	<icon src="img/icon.png" />

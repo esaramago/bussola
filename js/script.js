@@ -1,7 +1,3 @@
-
-$('body').css('background-color', '#AAA');
-
-
 // The watch id references the current `watchHeading`
 var watchID = null;
 
@@ -13,6 +9,8 @@ document.addEventListener("deviceready", onDeviceReady, false);
 //
 function onDeviceReady() {
     startWatch();
+$('body').css('background-color', 'tomato');
+
     navigator.notification.alert("PhoneGap is ready!");
 }
 
