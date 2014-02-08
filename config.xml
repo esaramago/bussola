@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<widget xmlns       = "http://www.w3.org/ns/widgets"
-    xmlns:gap       = "http://phonegap.com/ns/1.0"
-    xmlns:android   = "http://schemas.android.com/apk/res/android"
-    id              = "com.lumberg.greeeaaat"
-    version         = "1.0.0">
+<widget xmlns = "http://www.w3.org/ns/widgets"
+
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.phonegap.example"
+        version     = "1.0.0"
+        versionCode = "10" >
 
     <!-- versionCode is optional and Android only -->
 
@@ -27,5 +28,6 @@
 	<gap:splash src="splash.png" width="320" height="480"/>
 
 	<preference name="orientation" value="portrait" />
+	<plugin name="Compass" value="org.apache.cordova.CompassListener" />
 
 </widget>
