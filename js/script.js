@@ -1,3 +1,7 @@
+
+$('body').css('background-color', '#AAA');
+
+
 // The watch id references the current `watchHeading`
 var watchID = null;
 
