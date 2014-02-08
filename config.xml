@@ -7,20 +7,16 @@
         versionCode = "10" >
 
     <name>Bússola</name>
+    <description>Bússola que funciona!</description>
+    <author href="https://esaramago.com" email="reg@esaramago.com">Emanuel Saramago</author>
 
-    <description>
-    Bússola que funciona!
-    </description>
+    <icon src="img/icon.png" />
+    <gap:splash src="img/splash.png" width="320" height="480"/>
+	
+    <preference name="orientation" value="portrait" />
 
-	<author href="https://esaramago.com" email="reg@esaramago.com">
-	Emanuel Saramago
-	</author>
-
-	<preference name="orientation" value="portrait" />
-
-	<icon src="img/icon.png" />
-	<gap:splash src="img/splash.png" width="320" height="480"/>
-
-	<plugin name="Compass" value="org.apache.cordova.CompassListener" />
+    <feature name="Compass">
+        <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener" />
+    </feature>
 
 </widget>
