@@ -1,5 +1,6 @@
 // The watch id references the current `watchHeading`
 var watchID = null;
+    alert(0)
 
 // Wait for Cordova to load
 //
@@ -9,6 +10,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 //
 function onDeviceReady() {
     startWatch();
+    alert(0)
 }
 
 // Start watching the compass
@@ -16,24 +18,16 @@ function onDeviceReady() {
 function startWatch() {
 
     // Update compass every 3 seconds
-    var options = { frequency: 1000 };
+    var options = { frequency: 500 };
 
     watchID = navigator.compass.watchHeading(onSuccess, onError, options);
-}
-
-// Stop watching the compass
-//
-function stopWatch() {
-    if (watchID) {
-        navigator.compass.clearWatch(watchID);
-        watchID = null;
-    }
 }
 
 // onSuccess: Get the current heading
 //
 function onSuccess(heading) {
 
+	console.log(heading.magneticHeading);
 	$('.ponteiro').css({
 	 	'-webkit-transform': 'rotate(' + heading.magneticHeading + 'deg)',
 		'transform': 'rotate(' + heading.magneticHeading + 'deg)'
