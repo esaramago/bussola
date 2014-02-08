@@ -1,6 +1,6 @@
 // The watch id references the current `watchHeading`
 var watchID = null;
-    alert(0)
+    alert('js')
 
 // Wait for Cordova to load
 //
@@ -10,7 +10,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 //
 function onDeviceReady() {
     startWatch();
-    alert(0)
+    alert('phonegap')
 }
 
 // Start watching the compass
