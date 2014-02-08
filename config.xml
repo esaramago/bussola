@@ -6,28 +6,22 @@
         version     = "1.0.0"
         versionCode = "10" >
 
-    <!-- versionCode is optional and Android only -->
-
-    <preference name="phonegap-version" value="3.1.0" />
-
-    <name>Sample Config.xml</name>
+    <name>Bússola</name>
 
     <description>
     An example for phonegap build docs. 
     </description>
 
-    
 	<author href="https://esaramago.com" email="reg@esaramago.com">
 	Emanuel Saramago
 	</author>
 
-	<!-- Icon da aplicação-->
-	<icon src="logo.png" />
-	<!-- Splash screen -->
-
-	<gap:splash src="splash.png" width="320" height="480"/>
-
+    <preference name="phonegap-version" value="3.1.0" />
 	<preference name="orientation" value="portrait" />
+
+	<icon src="img/icon.png" />
+	<gap:splash src="img/splash.png" width="320" height="480"/>
+
 	<plugin name="Compass" value="org.apache.cordova.CompassListener" />
 
 </widget>
