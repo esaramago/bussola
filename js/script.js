@@ -17,7 +17,7 @@ function onDeviceReady() {
 function startWatch() {
 
     // Update compass every 3 seconds
-    var options = { frequency: 500 };
+    var options = { frequency: 1000 };
 
     watchID = navigator.compass.watchHeading(onSuccess, onError, options);
 }
@@ -31,7 +31,7 @@ function onSuccess(heading) {
 	 	'-webkit-transform': 'rotate(-' + heading.magneticHeading + 'deg)',
 		'transform': 'rotate(-' + heading.magneticHeading + 'deg)'
 	});
-    $('#coordinates').text(heading.magneticHeading + 'º');
+    $('#coordinates').text(heading.magneticHeading.toFixed(0) + 'º');
 
 }
 
