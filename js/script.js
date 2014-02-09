@@ -17,7 +17,7 @@ function onDeviceReady() {
 function startWatch() {
 
     // Update compass every 3 seconds
-    var options = { frequency: 700 };
+    var options = { frequency: 500 };
 
     watchID = navigator.compass.watchHeading(onSuccess, onError, options);
 }
@@ -26,10 +26,12 @@ function startWatch() {
 //
 function onSuccess(heading) {
 
+    $('#loading').addClass('fadeout');
 	$('.bussola').css({
 	 	'-webkit-transform': 'rotate(-' + heading.magneticHeading + 'deg)',
 		'transform': 'rotate(-' + heading.magneticHeading + 'deg)'
 	});
+    $('#coordinates').text(heading.magneticHeading + 'º');
 
 }
 
