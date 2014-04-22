@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
 
-        xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.esaramago.brossola"
-        version     = "1.0.0"
-        versionCode = "10" >
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.esaramago.brossola"
+    version     = "1.0.0">
 
-    <name>Brôssola</name>
-    <description>Bússola que funciona!</description>
-    <author href="https://esaramago.com" email="emanuel@esaramago.com">Emanuel Saramago</author>
+  <name>Brôssola</name>
+  <description>Bússola que funciona!</description>
+  <author href="https://esaramago.com" email="emanuel@esaramago.com">Emanuel Saramago</author>
 
-    <icon src="img/icon.png" />
+  <icon src="icon.png" />
 	
-    <preference name="orientation" value="portrait" />
+  <preference name="orientation" value="portrait" />
 
-    <feature name="Compass">
-        <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener" />
-    </feature>
+  <feature name="Compass">
+      <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener" />
+  </feature>
 
 </widget>

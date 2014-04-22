@@ -8,7 +8,8 @@ document.addEventListener("deviceready", onDeviceReady, false);
 // Cordova is ready
 //
 function onDeviceReady() {
-    navigator.notification.alert("PhoneGap is ready!");
+  alert(0)
+    //navigator.notification.alert("PhoneGap is ready!");
     startWatch();
 }
 
