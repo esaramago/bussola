@@ -53,8 +53,8 @@ li {
 	border-radius: 100%;
 	background-color: #DDD;
 	box-shadow: 0 0 30px 5px #DDD, inset 0 0 9px #555;
-	-webkit-transition: all .5s;
-	transition: all .5s;
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
 }
 .linha {
 	width: 153px;
