@@ -4,7 +4,7 @@
 		id="com.esaramago.brossola"
 		version="1.0.0">
     
-    <preference name="phonegap-version" value="2.9.0" />
+    <preference name="phonegap-version" value="3.3.0" />
 
     <name>Brôssola</name>
     <description>Bússola que funciona!</description>
