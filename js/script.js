@@ -1,6 +1,6 @@
 // The watch id references the current `watchHeading`
 var watchID = null;
-
+alert(22222)
 // Wait for Cordova to load
 //
 document.addEventListener("deviceready", onDeviceReady, false);
