@@ -1,6 +1,5 @@
 // The watch id references the current `watchHeading`
 var watchID = null;
-alert('inicio');
 
 // Wait for Cordova to load
 //
@@ -41,6 +40,5 @@ function onSuccess(heading) {
 // onError: Failed to get the heading
 //
 function onError(compassError) {
-    alert('on error');
     alert('Compass error: ' + compassError.code);
 }
