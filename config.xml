@@ -12,7 +12,7 @@
     <preference name="permissions" value="none" />
     <preference name="orientation" value="vertical" />
 
-    <gap:plugin name="org.apache.cordova.globalization" />
+    <gap:plugin name="org.apache.cordova.device-orientation" />
 
     <access origin="*" />
 </widget>
