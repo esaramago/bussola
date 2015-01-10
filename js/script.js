@@ -10,6 +10,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
     alert('device ready');
     navigator.notification.alert("PhoneGap is ready!");
+    alert('PhoneGap is ready! alert');
     startWatch();
 }
 
