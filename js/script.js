@@ -8,16 +8,13 @@ document.addEventListener("deviceready", onDeviceReady, false);
 // Cordova is ready
 //
 function onDeviceReady() {
-    alert('device ready');
-    navigator.notification.alert("PhoneGap is ready!");
-    alert('PhoneGap is ready! alert');
+    //navigator.notification.alert("PhoneGap is ready!");
     startWatch();
 }
 
 // Start watching the compass
 //
 function startWatch() {
-    alert('start watch');
 
     // Update compass every 3 seconds
     var options = { frequency: 1000 };
