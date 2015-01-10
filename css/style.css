@@ -260,13 +260,3 @@ li {
 	color: #333;
 	text-align: center;
 }
-
-footer {
-	position: absolute;
-	bottom: 10px;
-	width: 100%;
-	font-family: arial, sans-serif;
-	font-size: 11px;
-	color: #333;
-	text-align: center;
-}

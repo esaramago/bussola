@@ -10,15 +10,9 @@
     <author href="https://esaramago.com" email="reg@esaramago.com">Emanuel Saramago</author>
 
     <preference name="permissions" value="none" />
-    <preference name="phonegap-version" value="3.5.0" />
     <preference name="orientation" value="vertical" />
-    <preference name="KeepRunning" value="true"/>
 
-    <gap:plugin name="org.apache.cordova.device" />
-    <gap:plugin name="org.apache.cordova.device-orientation" />
     <gap:plugin name="org.apache.cordova.globalization" />
-    <gap:plugin name="org.apache.cordova.splashscreen" />
-    <gap:plugin name="de.appplant.cordova.plugin.local-notification" />
 
     <access origin="*" />
 </widget>
