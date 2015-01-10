@@ -1,5 +1,6 @@
 // The watch id references the current `watchHeading`
 var watchID = null;
+alert('inicio');
 
 // Wait for Cordova to load
 //
@@ -8,6 +9,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 // Cordova is ready
 //
 function onDeviceReady() {
+    alert('device ready');
     navigator.notification.alert("PhoneGap is ready!");
     startWatch();
 }
@@ -15,6 +17,7 @@ function onDeviceReady() {
 // Start watching the compass
 //
 function startWatch() {
+    alert('start watch');
 
     // Update compass every 3 seconds
     var options = { frequency: 1000 };
@@ -38,5 +41,6 @@ function onSuccess(heading) {
 // onError: Failed to get the heading
 //
 function onError(compassError) {
+    alert('on error');
     alert('Compass error: ' + compassError.code);
 }
